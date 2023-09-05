@@ -7,7 +7,7 @@ async function connectToDb(cb){
         useNewUrlParser: true,
         useUnifiedTopology: true,
         ssl: true, // Enable SSL/TLS
-        tlsAllowInvalidHostnames: true,);
+        tlsAllowInvalidHostnames: true});
     await client.connect();
     db = client.db('react-blog-db');
     cb();
