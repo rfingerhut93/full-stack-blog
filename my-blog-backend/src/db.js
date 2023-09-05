@@ -8,5 +8,4 @@ async function connectToDb(cb){
     db = client.db('react-blog-db');
     cb();
 }
-
 export {db, connectToDb};
